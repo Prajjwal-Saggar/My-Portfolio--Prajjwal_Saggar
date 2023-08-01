@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Noto+Sans&display=swap");
+
+* {
+  margin: 0;
+  overflow-x: hidden;
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  font-family: "Noto Sans", "sans-serif";
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  /* overflow-y: scroll; */
+}
+
+.nav {
+  background-color: black;
+  z-index: 25;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  border-bottom: 2px solid gray;
+  display: flex;
+  padding: 0 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.openmodulo{
+  background-color: rgb(0, 0, 0,1);
+  /* opacity: 0.75; */
+  width: 100%;
+  height: 30%;
+  top:10%;
+  position: absolute;
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  scale: 0;
+}
+
+
+
+.openmodulo a{
+  z-index: 30;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.nav-item-1 {
+  width: 15rem;
+}
+
+.nav-item-2 {
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item-2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav h2 {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.nav-item-3 {
+  display: none;
+}
+
+.nav-item-4{
+display: none;
+}
+
+.page-1 {
+  position: relative;
+
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+
+.page-1 .mainLeft {
+  color: white;
+  text-transform: capitalize;
+  /* padding: 8rem 0rem 0rem 2rem; */
+  margin: auto;
+  padding-left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.3rem;
+  width: 50%;
+}
+.mainLeft h1 {
+  font-weight: 400;
+  font-size: 3.1rem;
+}
+#name {
+  /* color: #F78D3D; */
+  font-weight: 700;
+  background: -webkit-linear-gradient(#f78d3d, #5d3db6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color:linear-gradient(to right ,#F78D3D,#5D3DB6 ); */
+}
+#web-dev {
+  /* line-height: 5rem; */
+  font-size: 2.7rem;
+}
+.animation {
+  position: relative;
+  font-weight: 800;
+  background: -webkit-linear-gradient(#f78d3d, #5d3db6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animation::before {
+  content: "";
+  position: absolute;
+  height: 2.7rem;
+  width: 0.2rem;
+  top: 45%;
+  right: 0rem;
+  transform: translateY(-38%);
+  background-color: white;
+  animation: blink 0.7s infinite;
+}
+
+.animation.stop-blinking::before{
+  animation: none;
+}
+
+@keyframes blink {
+50%{
+  opacity: 0;
+}
+}
+#hi-there {
+  font-size: 2.7rem;
+}
+.mainLeft a {
+  text-decoration: none;
+  margin-top: 1rem;
+  padding: 1.2rem 2.5rem;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.3rem;
+  /* background-color: #5D3DB6; */
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #f78d3d, #5d3db6);
+  cursor: pointer;
+}
+.page-1 .mainRight {
+  width: 50%;
+}
+.mainRight img {
+  margin-top: 1%;
+  width: 100%;
+  height: 90%;
+}
+.skills {
+  position: relative;
+  padding-top: 2rem;
+  width: 100%;
+  height: 90%;
+  background-color: black;
+  /* background-color: chocolate; */
+}
+.skillsHead {
+  margin-top: 4rem;
+  color: white;
+  letter-spacing: 0.25rem;
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+
+.skills .content {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 3rem;
+}
+.card {
+  width: 11rem;
+  height: 11rem;
+  /* border: 2px solid black; */
+  display: flex;
+
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.cards {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card img {
+  width: 7rem;
+  height: 7rem;
+}
+#javascript {
+  border-radius: 100%;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+.writtens {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.prog-tag {
+  overflow-y: hidden;
+  color: white;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+.prog-per {
+  overflow-y: hidden;
+  color: white;
+  line-height: 1.3rem;
+  font-size: 1rem;
+}
+.line {
+  overflow-y: hidden;
+  width: 100%;
+  height: 0.75rem;
+  border-radius: 2rem;
+  background-color: white;
+}
+.overlying-line {
+  background: linear-gradient(to right, #f78d3d, #5d3db6);
+  height: 0.75rem;
+  /* width: 92%; */
+  border-radius: 2rem;
+}
+
+.about {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  /* background-color: cornflowerblue; */
+}
+
+.aboutContent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutMain {
+  width: 100%;
+  height: 100%;
+  /* background-color: darksalmon; */
+  background-color: black;
+  overflow-y: hidden;
+}
+
+.aboutMain h1 {
+  padding-top: 2rem;
+  display: flex;
+
+  justify-content: center;
+  color: white;
+  letter-spacing: 0.3rem;
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content {
+  padding: 0 2rem;
+  height: 80%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  /* color: white; */
+  justify-content: center;
+  font-family: "Edu SA Beginner", cursive;
+  background: -webkit-linear-gradient(#f78d3d, #5d3db6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 451px) {
+  .nav-item-3 {
+    display: block;
+  }
+
+  .nav-item-2 {
+    display: none;
+  }
+
+  .page-1 {
+    flex-direction: column;
+  }
+  .page-1 .mainLeft {
+    padding-top: 6rem;
+    width: 100%;
+    gap: 1rem;
+    height: 68%;
+
+    flex-wrap: nowrap;
+  }
+  .mainLeft h1 {
+    font-size: 2rem;
+    /* height: 20%; */
+    overflow-y: hidden;
+  }
+  #web-dev {
+    font-size: 1.6rem;
+    width: 100%;
+    /* height: 10%; */
+  }
+
+  #hi-there {
+    font-size: 2rem;
+  }
+
+  .mainLeft a {
+    padding: 0.75rem 1.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .page-1 .mainRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    height: 50%;
+  }
+
+  .skills {
+    margin-top:0;
+    /* padding-top: 2rem; */
+    height: 170%;
+    overflow-y: hidden;
+  }
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+    /* gap:1rem; */
+  }
+  .skills .content {
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+  .skillsHead {
+    margin-top: 35%;
+  }
+
+  .aboutMain h1 {
+    font-size: 3rem;
+  }
+  .about-content {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width:390px){
+  .skills{
+    height: 200%;
+  }
+}
