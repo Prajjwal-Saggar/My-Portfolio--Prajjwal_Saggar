@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prajjwal Saggar -Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <div id="hamburger" class="openmodulo">
+        <h1    onclick="closeModulo()"><a  href="#home">Home</a></h1>
+        <h1    onclick="closeModulo()"><a href="#skills-ref">Skills</a></h1>
+        <h1    onclick="closeModulo()"><a href="#aboutMe">About</a></h1>
+      </div>
+      <div class="nav">
+        <div class="nav-item-1">
+          <h2>Prajjwal Saggar</h2>
+        </div>
+
+        <div class="nav-item-2">
+          <h2><a  href="#home">Home</a></h2>
+          <h2><a href="#skills-ref">Skills</a></h2>
+
+          <h2><a href="#aboutMe">About</a></h2>
+        </div>
+        <div class="nav-item-3">
+          <svg
+          onclick="openModulo()"
+            xmlns="http://www.w3.org/2000/svg"
+            height="2em"
+            viewBox="0 0 448 512"
+          >
+            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #ffffff;
+              }
+            </style>
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </div>
+        <div class="nav-item-4">
+          <svg
+            onclick="closeModulo()"
+            xmlns="http://www.w3.org/2000/svg"
+            height="2em"
+            viewBox="0 0 384 512"
+          >
+            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #ffffff;
+              }
+            </style>
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- PAGE-1 -->
+      <div id="home" class="page-1">
+        <div class="mainLeft">
+          <h1 id="hi-there">hi there ,</h1>
+          <h1>i am <span id="name">prajjwal saggar</span></h1>
+          <h1 id="web-dev">i am into &nbsp;<span class="animation"></span></h1>
+          <a href="#aboutMe">about me</a>
+        </div>
+        <div class="mainRight">
+          <img src="./images/main-img.avif" alt="" />
+        </div>
+      </div>
+      <!-- PAGE-2 -->
+      <div id="skills-ref" class="skills">
+        <div class="content">
+          <div class="skillsHead"><h1>MY Skills</h1></div>
+          <!-- CARDS -->
+          <div class="cards">
+            <!-- card-1 -->
+            <div class="card">
+              <img src="./images/html.png" alt="" />
+              <div class="progress">
+                <div class="writtens">
+                  <span class="prog-tag">HTML</span>
+                  <span class="prog-per">92%</span>
+                </div>
+                <div class="line">
+                  <div style="width: 92%" class="overlying-line"></div>
+                </div>
+              </div>
+            </div>
+            <!-- card-2 -->
+            <div class="card">
+              <img src="./images/css.png" alt="" />
+              <div class="progress">
+                <div class="writtens">
+                  <span class="prog-tag">CSS</span>
+                  <span class="prog-per">95%</span>
+                </div>
+                <div class="line">
+                  <div style="width: 95%" class="overlying-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="card">
+              <img id="javascript" src="./images/js.png" alt="" />
+              <div class="progress">
+                <div class="writtens">
+                  <span class="prog-tag">JavaScript</span>
+                  <span class="prog-per">70%</span>
+                </div>
+                <div class="line">
+                  <div style="width: 70%" class="overlying-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARDS-2 -->
+          <div class="cards">
+            <!-- card-4 -->
+            <div class="card">
+              <img src="./images/tailwind.png" alt="" />
+              <div class="progress">
+                <div class="writtens">
+                  <span class="prog-tag">TailWind CSS</span>
+                  <span class="prog-per">90%</span>
+                </div>
+                <div class="line">
+                  <div style="width: 90%" class="overlying-line"></div>
+                </div>
+              </div>
+            </div>
+            <!-- card-5 -->
+            <div class="card">
+              <img src="./images/c-language.png" alt="" />
+              <div class="progress">
+                <div class="writtens">
+                  <span class="prog-tag">C++</span>
+                  <span class="prog-per">50%</span>
+                </div>
+                <div class="line">
+                  <div style="width: 50%" class="overlying-line"></div>
+                </div>
+              </div>
+            </div>
+            <!-- card-6 -->
+            <div class="card">
+              <img src="./images/python.png" alt="" />
+              <div class="progress">
+                <div class="writtens">
+                  <span class="prog-tag">Python</span>
+                  <span class="prog-per">80%</span>
+                </div>
+                <div class="line">
+                  <div style="width: 80%" class="overlying-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE-3 -->
+      <div id="aboutMe" class="about">
+        <div class="aboutContent">
+          <div class="aboutMain">
+            <h1>About Me</h1>
+
+            <div class="about-content">
+              <h2>Greetings,</h2>
+              <h2>
+                I am Prajjwal Saggar, a first-year student at VIT Chennai.
+              </h2>
+              <h2>
+                Embracing the artistry of web development and the allure of
+                coding, I strive to fashion compelling digital experiences that
+                leave a lasting impression.
+              </h2>
+              <h2>
+                Join me on this exhilarating odyssey as we navigate the endless
+                horizons of innovation and creativity.
+              </h2>
+              <h2>
+                Together, let's embark on a quest to unlock the full potential
+                of the virtual frontier.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
